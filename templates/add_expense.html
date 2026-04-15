@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Expense</title>
+</head>
+<body>
+    <h2>Add Expense</h2>
+
+    <form method="POST">
+        Amount: <input type="number" step="0.01" name="amount" required><br><br>
+
+        Category:
+        <select name="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Rent</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select><br><br>
+
+        Note: <input type="text" name="note"><br><br>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>

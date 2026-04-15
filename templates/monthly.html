@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Summary</title>
+</head>
+<body>
+    <h2>Monthly Expense Summary</h2>
+
+    <form method="POST">
+        Select Month:
+        <input type="month" name="month" required>
+        <button type="submit">View</button>
+    </form>
+
+    {% if total is not none %}
+        <h3>Total: ₹{{ total }}</h3>
+    {% endif %}
+
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
